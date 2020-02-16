@@ -1,0 +1,142 @@
+#Latex TexStudio templates
+\documentclass[12pt, oneside]{article}
+\usepackage[a4paper, margin=1.0 in, bindingoffset=0.4in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{xparse}
+%\usepackage{titling}
+\usepackage{mathtools}
+%\usepackage{booktabs}
+\usepackage{physics}
+%\usepackage{sectsty}
+\usepackage{cite}
+%\usepackage{hyperref}
+\usepackage[abs]{overpic}
+%\usepackage{tikz}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{graphicx}
+%\usepackage{eso-pic}
+\usepackage{appendix}
+\usepackage{pdfpages}
+\graphicspath{ {figures/} }
+%\begin{titlepage}
+%		\title{ Beam Dynamics Study in a Two - Energy Storage Ring}
+%
+%		\author{  B. Dhital, G.A. Krafft, F. Lin, Jefferson Lab \\
+%			M. Borland, ANL}
+%\end{titlepage}
+
+\hyphenation{ac-cel-er-at-ing}
+\hyphenation{cor-re-spond-ing}
+
+\title{ Transverse Stability in a Two-Energy Storage Ring: With Synchrotron Radiation}
+\author{B. Dhital, G.A. Krafft, F.Lin,V. Morozov, Jefferson Lab, USA}
+
+\begin{document}
+\bibliographystyle{ieeert}
+%\clearpage
+\maketitle
+%\thispagestyle{empty}
+%\newpage
+
+\section*{Abstract}
+We describe the transverse stability in a two-energy storage ring
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.6]{Sr_cooler_v6.png}
+	\caption{ Beta functions versus s plot in a two-energy storage ring }
+	\label{Fig1}
+\end{figure}
+
+Figure \ref{Fig1} shows
+
+
+
+
+
+
+\section{Tune calculation}
+One turn transfer map in terms of $(\Delta z, \Delta E)$ is given by~\cite{4}
+
+\begin{equation}
+ \begin{pmatrix}
+\Delta z\\
+\Delta E  \\
+\end{pmatrix}_2  = \begin{pmatrix}
+1 & 0 \\
+M_{65} & 1 \\
+\end{pmatrix} \begin{pmatrix}
+1 & 0 \\
+0 & \frac{E_H}{E_L}  \\
+\end{pmatrix} \begin{pmatrix}
+1 & M_{56} \\
+0 & 1  \\
+\end{pmatrix} \begin{pmatrix}
+1 & 0 \\
+0 & \frac{E_L}{E_H} \\
+\end{pmatrix} \begin{pmatrix}
+1 & M_{56}\\
+0 & 1 \\
+\end{pmatrix}  \begin{pmatrix}
+\Delta z\\
+\Delta E  \\
+\end{pmatrix}_1
+\label{tune}
+\end{equation}
+
+
+\begin{equation}
+\mathrm{M}  = \begin{pmatrix}
+1 & \mathrm{M_{56} + (M_{56}\times \frac{E_L}{E_H})} \\
+\mathrm{ M_{65}} & 1 +\mathrm{ M_{65} \times \frac{E_L}{E_H}} \\
+\end{pmatrix}
+\label{tune1}
+\end{equation}
+
+The stability condition is $\left| \cos \mu \right| = \left| Trace M \right| < 2 $.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.6]{syn.png}
+	\caption{ central momentum (p) versus Pass plot to calculate tune }
+	\label{syn_tune}
+\end{figure}
+
+
+\section{Synchrotron Radiation Damping}
+
+\subsection{Damping Time}
+
+
+
+\section{Conclusion}
+
+
+\section{Acknowledgment}
+Thanks to V. Morozov who
+
+\clearpage
+
+\begin{appendices}
+
+
+
+\begin{thebibliography}{1}
+
+	\bibitem{1} M. Borland, `` elegant: A Flexible SDDS-Compliant Code for Accelerator Simulation,"
+	Advanced Photon Source LS-287, September 2000.\\
+	\bibitem{2} H Wiedemann, Particle Accelerator Physics, Fourth Edition. \\
+	\bibitem{3} V. Morozov, private communications. \\
+	\bibitem{4} G. A. Krafft, Unpublished draft \\
+
+\end{thebibliography}
+\end{appendices}
+
+
+\end{document}
