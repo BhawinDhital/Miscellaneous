@@ -1,0 +1,34 @@
+# Linux operating system is very demanding
+1. Where am I in the computer?
+pwd
+2.How to create a new directory?
+mkdir directory_name
+3.How to got to the directory_name?
+cd directory_name
+4.How to create a txt file?
+touch test.txt
+5.How to run a python file?
+python hello.py
+6.How to install C++, Python in Linux?
+sudo apt-get install Python
+7.How to update Linux?
+sudo apt-get update
+8.How to know who are you?
+whoami
+9.How to list all running process?
+top
+
+#Archive, compress, unpack and decompress files
+1. Archives values in the /etc directory in a file called etc.tar
+tar cvf etc.tar /etc
+2. Decompresses archive:
+tar xvf etc.tar
+
+# List, Set and change standard file permissions:
+chmod: used to change the read, write and execute privileges of a file or directory.
+chmod 777 somefile.txt:
+This change the file to read/write/execute for the owner
+Example chmod 755 somefile.txt
+User:read(4) + write(2) + execute(1) = 7
+Group: read(4) + execute(1) = 5
+Everyone:read(4) + execute(1) = 5
